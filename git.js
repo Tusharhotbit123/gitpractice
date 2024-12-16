@@ -2,3 +2,4 @@
 //testing for branch 2
 
 //this is my thrid commit
+//checking how to use rebase
