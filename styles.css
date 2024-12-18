@@ -9,21 +9,44 @@ body {
     background-color: #f0f0f0;
   }
   
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 300px); /* 3 columns, each 100px wide */
-    grid-template-rows: repeat(2, 300px); /* 2 rows, each 100px tall */
-    gap: 10px; /* 10px gap between grid items */
+  .flex-container {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 5px;
   }
   
-  .grid-item {
+  .container1{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:10px;
+    background-color:lightgreen;
+    height:auto;
+    width:auto;
+  }
+
+  .container2{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:10px;
+    background-color:lightgreen;
+    height:auto;
+    width:auto;
+  }
+
+
+    .item {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #4CAF50;
+    height:100px;
+    width:100px;
+    margin:5px;
     color: white;
     font-size: 20px;
     border: 1px solid #ddd;
