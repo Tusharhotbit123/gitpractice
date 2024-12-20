@@ -1,17 +1,39 @@
-function Person(name,age,height,eyecolor){
+const element=document.getElementById("element")
 
-  this.name=name;
-  this.age=age;
-  this.height=height;
-  this.eyecolor=eyecolor;
+element.addEventListener("click",()=>{
+    console.log("hello world")
+})
 
-}
+element.addEventListener("keydown",()=>{
+    console.log("hello world")
+})
+element.addEventListener("keyup",()=>{
+    console.log("hello world")
+})
 
-const Tushar=new Person("Tushar Sharma",23,"6 ft","black")
-const Clone={name:"Clone"}
+element.addEventListener("focus",()=>{
+    console.log("hello world")
+})
+element.addEventListener("submit",()=>{
+    console.log("hello world")
+})
+element.addEventListener("blur",()=>{
+    console.log("hello world")
+})
+element.addEventListener("change",()=>{
+    console.log("hello world")
+})
 
-console.log(Object.keys(Tushar))
-console.log(Object.values(Tushar))
-console.log(Object.entries(Tushar))
-console.log(Object.assign(Clone,Tushar))
-console.log(Object.freeze(Tushar))
+element.addEventListener("resize",()=>{
+    console.log("hello world")
+})
+
+element.addEventListener("reset",()=>{
+    console.log("hello world")
+})
+
+element.addEventListener("scroll",()=>{
+    console.log("hello world")
+})
+
+
