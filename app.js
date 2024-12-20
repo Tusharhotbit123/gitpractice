@@ -1,11 +1,12 @@
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 50,
-  eyeColor: "blue"
-};
+function Person(name,age,height,eyecolor){
 
-person.height="6ft"
-delete person.age
+  this.name=name;
+  this.age=age;
+  this.height=height;
+  this.eyecolor=eyecolor;
 
-console.log(person)
+}
+
+const Tushar=new Person("Tushar Sharma",23,"6 ft","black")
+
+console.log(Tushar)
