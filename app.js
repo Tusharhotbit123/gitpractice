@@ -1,10 +1,17 @@
-const first=document.getElementById("container")
-const second=document.getElementById("container2")
-const third=document.getElementById("button")
+// const newObj={
+//   name:"tushar sharma",
+//   email:"tushar@example.com",
+//   password:"123456"
+// }
 
-  second.addEventListener("click",(e)=>{
+// console.log(newObj["name"])
 
-    console.log(e.target)
+// const newObj=new Object()
+
+// newObj.firstname="Tushar"
+// newObj.lastname="Sharma"
+// newObj.age=20
+// newObj.email="tusharsharma@example.com"
 
 
-  })
+// console.log(newObj)
