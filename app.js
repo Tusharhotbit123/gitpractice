@@ -1,17 +1,11 @@
-// const newObj={
-//   name:"tushar sharma",
-//   email:"tushar@example.com",
-//   password:"123456"
-// }
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
 
-// console.log(newObj["name"])
+person.height="6ft"
+delete person.age
 
-// const newObj=new Object()
-
-// newObj.firstname="Tushar"
-// newObj.lastname="Sharma"
-// newObj.age=20
-// newObj.email="tusharsharma@example.com"
-
-
-// console.log(newObj)
+console.log(person)
