@@ -1,19 +1,7 @@
-const products=async()=>{
-    try{
-
-        const data=await fetch("https://dummyjson.com/products")
-
-        const res = await data.json()
-        // console.log(res,"ss");
-        
-        return res
-
-    }catch(err){
-        console.log(err)
+function fun(a,b){
+    if(a==0){
+        throw new Error("this is wrong")//custom error in js
     }
 }
 
-products().then(function(res){//asynchronous function in js returns promise
-    console.log(res)
-})
-// console.log(values)
+fun(0,2);
