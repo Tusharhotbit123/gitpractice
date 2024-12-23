@@ -1,39 +1,14 @@
-const element=document.getElementById("element")
+const arr=[1,2,3];
 
-element.addEventListener("click",()=>{
-    console.log("hello world")
-})
+// arr.push(6);
+// console.log(arr)
 
-element.addEventListener("keydown",()=>{
-    console.log("hello world")
-})
-element.addEventListener("keyup",()=>{
-    console.log("hello world")
-})
+// arr.pop()//used to remove the last element
 
-element.addEventListener("focus",()=>{
-    console.log("hello world")
-})
-element.addEventListener("submit",()=>{
-    console.log("hello world")
-})
-element.addEventListener("blur",()=>{
-    console.log("hello world")
-})
-element.addEventListener("change",()=>{
-    console.log("hello world")
-})
+// arr.unshift(6)// adds an element to the beginning of the array
 
-element.addEventListener("resize",()=>{
-    console.log("hello world")
-})
+// arr.splice(1,1,"tushar",a"nitesh") //splice method adds or removes element from specified index
 
-element.addEventListener("reset",()=>{
-    console.log("hello world")
-})
+// const newarr=arr.slice(1,2) //the slice method removes from a starting index to a defined index(not included) and creates a new array
 
-element.addEventListener("scroll",()=>{
-    console.log("hello world")
-})
-
-
+// console.log(newarr);
