@@ -1,17 +1,19 @@
-const promise=new Promise((resolve,reject)=>{
+const products=async()=>{
+    try{
 
-    let error=false;
+        const data=await fetch("https://dummyjson.com/products")
 
-    if(error){
-        reject("error:there is an error")
-    }else{
-        resolve({username:"tushar",email:"tushar@example.com"})
+        const res = await data.json()
+        // console.log(res,"ss");
+        
+        return res
+
+    }catch(err){
+        console.log(err)
     }
-    
-})
+}
 
-promise.then(function(user){
-    console.log(user.email)
-}).catch(function(err){
-    console.log(err)
+products().then(function(res){//asynchronous function in js returns promise
+    console.log(res)
 })
+// console.log(values)
