@@ -21,3 +21,6 @@ const arr=[1,2,3,4,5,6]
 // const val=arr.includes(7);//checks if a vlaue is contained and returns true or false based on that
 
 // console.log(val)
+
+// const newarr=[...arr,7,8,9,10];//spreadopeartor
+// console.log(newarr)
