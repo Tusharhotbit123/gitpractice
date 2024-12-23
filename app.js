@@ -1,14 +1,27 @@
-const arr=[1,2,3];
+const arr=[1,2,3,4,5,6]
 
-// arr.push(6);
-// console.log(arr)
+// const newarr=arr.map((num)=>{//map is used to iterate over an array and create a new array
+//     return(
+//         num*10
+//     )
+// })
 
-// arr.pop()//used to remove the last element
+// const newarr=arr.filter((num)=>{//filter is used to check a certain condition and return a new array
+//     return(
+//          num<=3
+//     )
+// })
 
-// arr.unshift(6)// adds an element to the beginning of the array
+// let sum=0;
 
-// arr.splice(1,1,"tushar",a"nitesh") //splice method adds or removes element from specified index
+// const callback=(num)=>{
+//   sum+=num
+// }
 
-// const newarr=arr.slice(1,2) //the slice method removes from a starting index to a defined index(not included) and creates a new array
+// arr.forEach(callback)//used to iterate over each element and provide some callback function,doesnot create a new function
 
-// console.log(newarr);
+// const total=arr.reduce((sum,curr,idx,arr)=>{//used to iterate over a sample array and return a reduced value
+//     return sum+arr[idx]
+// })
+
+console.log(total)
