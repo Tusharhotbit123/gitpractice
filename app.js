@@ -4,22 +4,46 @@
 //debouncing
 // Debouncing in JavaScript is a way to control how often a particular function is executed, especially for events that fire repeatedly in quick succession, like scroll, resize, or input.
 
-function debounce(func,delay){//debouncing function
+// function debounce(func,delay){//debouncing function
 
-    let timer;
+//     let timer;
 
-    return function(){
-        clearInterval(timer)//clearing the timer
-        timer=setTimeout(func,delay)
-    }
+//     return function(){
+//         clearInterval(timer)//clearing the timer
+//         timer=setTimeout(func,delay)
+//     }
 
-}
+// }
 
-let counter=0;
-function sayHello(){
-    console.log("Hello",counter++)
-}
+// let counter=0;
+// function sayHello(){
+//     console.log("Hello",counter++)
+// }
 
-const debouncedSayHello=debounce(sayHello,1000)
+// const debouncedSayHello=debounce(sayHello,1000)
 
-document.getElementById("myButton").addEventListener("click",debouncedSayHello)
+// document.getElementById("myButton").addEventListener("click",debouncedSayHello)
+
+//throttling
+// Throttling in JavaScript is a technique to control how frequently a function is executed. Unlike debouncing (which waits for the event to stop), throttling ensures the function runs at regular intervals, no matter how often the event is triggered.
+
+function throttle(func, delay) {
+    let lastCall = 0; // Time when the function was last called
+  
+    return function() {
+      const now = Date.now(); // Current time
+      if (now - lastCall >= delay) { // Check if enough time has passed
+        lastCall = now; // Update the last call time
+        func(); // Run the function
+      }
+    };
+  }
+  
+  function buttonClicked() {
+    console.log("Button clicked!");
+  }
+  
+  const throttledButtonClick = throttle(buttonClicked, 2000); // Throttle to 2 seconds
+  
+  document.getElementById("myButton").addEventListener("click", throttledButtonClick);
+  
