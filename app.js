@@ -1,21 +1,25 @@
-//poylfill example
+//prototypes
 
-const arr=[1,2,3,4,5]
-
-Array.prototype.forEach=null
-
-if(!Array.prototype.forEach){
-
-    Array.prototype.forEach=function(callbackfunction){
-
-        for(let val of this){
-            callbackfunction(val)
-        }
-
-    }
+const object={
+    name:"Nitesh",
+    city:"Indore"
 }
 
-arr.forEach((val)=>{
-    console.log(val*2)
-})
+const object2={
+    name:"Tushar",
+}
 
+//must avoid this due to performance issues
+object2.__proto__=object//assigning object as prototype to object2
+
+// console.log(object2.city)
+
+Function.prototype.mybind=function(){
+    console.log("ahdaksjd")
+}
+
+function fun(){
+    console.log("check")
+}
+
+console.log(fun.__proto__.mybind())
