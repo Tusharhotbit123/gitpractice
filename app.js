@@ -1,17 +1,12 @@
-//closures
-//closures is a function bundled with its lexical scope
+//currying
 
-function x(){
-
-    var a=7;
-
-    function y(){
-        console.log(a)
+function fun(a){
+    return function(b){
+        return function(c){
+            return a+b+c
+        }
     }
-
-    return y;
-
 }
 
-var z=x()
-z()//function y remembers its surrounding and hence even after x has finished its execution,it still works and we can print a 
+
+console.log(fun(1)(2)(3))
